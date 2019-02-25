@@ -9,7 +9,7 @@
 
 
 // 席在庫オブジェクト
-const Stock.isConnect == 1Stock = {table:2, avairableSeatMin:2, avairableSeatMax:4, isConnect:1};
+const Stock = {table:2, avairableSeatMin:2, avairableSeatMax:4, isConnect:1};
 
 // 指定した人数で予約できるか判定
 function isAvairable(numberOfPeople){
@@ -28,8 +28,6 @@ console.log(isAvairable(5));
 console.log(isAvairable(8));
 console.log(isAvairable(9));
 
-// なんぱたーんかできるように
-// クラスを使う
-// か
+// なんパターンかできるようにクラスを使うか
 // isAvairable(Stock,numberOfPeople)
 // オブジェクトで１セットにする

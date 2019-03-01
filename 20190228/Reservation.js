@@ -25,8 +25,6 @@ function judgeReservation(numberOfPeople){
     }
 }
 
-console.log(judgeReservation(1));
-
 module.exports = {
     judgeReservation
 }

@@ -2,26 +2,26 @@
 
 class Era {
 
-    constructor(year,name){
+    constructor(year){
         this.year = year;
-        this.name = name;
     }
 
     get eraName(){
+        
+        let name;
+
         if(this.year >= 1989){
-            this.name = ("平成");
+            name = ("平成");
         }else if(this.year >= 1926){
-            this.name = ("昭和");
+            name = ("昭和");
         }else{
             throw Error("明治以前なのでエラー");
         };
-        return this.name;
+        return name;
     }
 }
 
-let year = new Era(1940);
+let year = new Era(1992);
 console.log("元号は" + year.eraName + "です");
 
-// ?? クラスのget構文のエクスポートの仕方
-
-module.exports.Era = Era;
+module.exports = Era;
